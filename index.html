@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <title>Tarea Formulario Codebulls</title>
+    <script src="custom.js"></script>
+</head>
+<body>
+
+
+<!---
+
+Datos del formulario
+
+Nombre: 
+Juan Camilo Pinto
+Correo: 
+jcpinto@codebullsteam.com
+Telefono:
+3001231323
+
+
+#4c2c6d
+#92275c
+
+--->
+
+    <section class="gradientColorBG">
+        <div id="Step1">
+            <div><h2 class="h2Grande" >¡Subscribete!</h2></div>
+            <div id="formulario">
+                <label for="nombre">Nombre
+                    <input type="text" name="nombre" id="nombre">
+                </label>
+                <label for="email">Correo Electrónico
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="tlfn">Teléfono
+                    <input type="phone" name="tlfn" id="tlfn">
+                </label>
+                <div style="display: flex; justify-content: center;">
+                    <button type="submit" id="sendForm" class="gradientColorBG">Guardar</button>
+                </div>
+            </div>
+        </div>
+        <div id="Step2">
+            <div><h2 class="h2Grande" >Estos son los datos ingresados</h2></div>
+            <div id="resultados">
+                <p><strong>Nombre:</strong> <span id="nombreSpan"></span></p>
+                <p><strong>Correo Electrónico:</strong> <span id="emailSpan"></span></p>
+                <p><strong>Teléfono:</strong> <span id="tlfnSpan"></span></p>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="submit" id="backForm" class="gradientColorBG">Atras</button>
+            </div>
+        </div>
+        <img src="CodeBullsBlackLogo.png" alt="">
+    </section>
+</body>
+</html>
